@@ -28,6 +28,43 @@
     justify-content: space-between;
 }
 
+.edit_input {
+  font-size: 18px;
+  padding: 5px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  width: 100%; 
+  margin-bottom: 10px; 
+}
+.edit_tag_input {
+  font-size: 14px;
+  padding: 4px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  margin-right: 5px; 
+}
+.save_button {
+  background-color: #6457f9; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.save_button:hover {
+  background-color: #5a4ed8; 
+}
+.edit_icon{
+    width: 20px;
+    opacity: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.task_actions {
+  display: flex;
+  align-items: center; 
+}
+
 .task_delete {
     width: 35px;
     height: 35px;
@@ -49,6 +86,7 @@
     opacity: 50%;
     transition: all 0.3s ease-in-out;
 }
+
 
 .task_delete:hover .delete_icon {
     opacity: 80%;

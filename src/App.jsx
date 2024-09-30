@@ -9,6 +9,13 @@ import reviewIcon from './assets/review.png'
 
 const oldTasks = localStorage.getItem("tasks")
 
+ const handleEdit = (index, newTitle, newTags) => {
+   const updatedTasks = tasks.map((task, i) =>
+     i === index ? { ...task, task: newTitle, tags: newTags } : task
+   );
+   setTasks(updatedTasks);
+ };
+
 const App = () => {
   const [tasks, setTasks] = useState(oldTasks ? JSON.parse(oldTasks) : [])
   const [activeCard,setActiveCard] = useState(null)
@@ -46,6 +53,7 @@ const App = () => {
           tasks={tasks}
           status="todo"
           handleDelete={handleDelete}
+          handleEdit={handleEdit}
           setActiveCard={setActiveCard}
           onDrop={onDrop}
         />

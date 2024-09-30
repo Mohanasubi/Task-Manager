@@ -1,0 +1,33 @@
+.task_column_heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.task_column_icon {
+    width: 30px;
+    margin-right: 5px;
+}
+
+@media (max-width: 768px)
+{
+     .task_column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .task_column_heading {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 480px)
+{
+    .task_column_heading {
+    font-size: 1rem;
+  }
+
+  .task_column_icon {
+    width: 20px;
+    height: 20px;
+  }
+}

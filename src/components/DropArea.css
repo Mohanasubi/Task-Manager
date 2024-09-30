@@ -1,0 +1,19 @@
+.drop_area{
+    width: 100%;
+    height: 100px;
+    background-color: #f9f9f9;
+    columns: #dcdcdc;
+    border: 1px dashed #dcdcdc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+.drop_area:hover{
+    background-color: #e0e0e0;
+}
+
+.hide_drop{
+    opacity: 0;
+}

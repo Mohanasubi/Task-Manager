@@ -1,0 +1,105 @@
+.task_card {
+    background: #ffffff;
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px 0;
+    transition: transform 0.2s;
+    cursor: grab;
+}
+.task_card:hover{
+    transform: translateY(-3px);
+}
+.task_card:active{
+    opacity: 0.7;
+    border: 1px solid #111;
+}
+.task_text {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.task_card_bottom_line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit_input {
+  font-size: 18px;
+  padding: 5px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  width: 100%; 
+  margin-bottom: 10px; 
+}
+.edit_tag_input {
+  font-size: 14px;
+  padding: 4px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  margin-right: 5px; 
+}
+.save_button {
+  background-color: #6457f9; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.save_button:hover {
+  background-color: #5a4ed8; 
+}
+.edit_icon{
+    width: 20px;
+    opacity: 50%;
+    transition: all 0.3s ease-in-out;
+}
+.task_actions {
+  display: flex;
+  align-items: center; 
+}
+
+.task_delete {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.task_delete:hover {
+    background-color: #ebebeb;
+    transform: scale(1.1);
+}
+
+.delete_icon {
+    width: 20px;
+    opacity: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.task_delete:hover .delete_icon {
+    opacity: 80%;
+}
+
+@media (max-width: 768px)
+{
+     .task_card {
+    padding: 8px;
+  }
+}
+@media (max-width: 480px){
+    .task_card {
+    padding: 6px;
+  }
+}

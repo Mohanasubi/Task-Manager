@@ -1,0 +1,105 @@
+.app_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.app_header > form {
+    width: 40%;
+}
+
+.task_input {
+    font-size: 20px;
+    font-weight: 500;
+    background: #f9f9f9;
+    color: #000;
+    border: 1px solid #dfe3e6;
+    border-radius: 5px;
+    padding : 10px 12px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.task_input::placeholder {
+    color: #686868;
+}
+
+.task_form_bottom_line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.task_status {
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #999;
+    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    padding: 0 5px;
+}
+
+.task_submit {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #ff6f61;
+    color: #fff;
+    border-radius: 5px;
+    height: 40px;
+    padding: 3px 13px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+@media (max-width: 768px) {
+    .app_header > form {
+        width: 80%;
+    }
+
+    .task_input {
+        padding: 2px 12px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .task_form_bottom_line {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .task_status,
+    .task_submit {
+        font-size: 14px;
+        height: 35px;
+        width: 100%;
+    }
+
+    .task_submit {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .app_header > form {
+        width: 95%;
+    }
+
+    .task_input {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+
+    .task_status,
+    .task_submit {
+        font-size: 13px;
+        height: 30px;
+        width: 100%;
+    }
+}
